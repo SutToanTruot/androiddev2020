@@ -10,7 +10,6 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-
+* Name: Nguyen Tuan Hiep
+* ID: USTHBI8-063
+* Group ID: Group 6
