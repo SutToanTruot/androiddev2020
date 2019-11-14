@@ -1,28 +1,46 @@
-    package vn.edu.usth.weather;
+package vn.edu.usth.weather;
 
-    import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-    import android.os.Bundle;
-    import android.util.Log;
+import android.os.Bundle;
+import android.util.Log;
 
-    public class WeatherActivity extends AppCompatActivity{
-            private static final String TAG = "WeatherTAG";
+public class WeatherActivity extends AppCompatActivity {
 
-            @Override
-            protected void onCreate (Bundle saveInstanceState){
-                super.onCreate(saveInstanceState)
-                setContentView(R.layout.activity_weather);
-                Log.i("create", "call create");
-                ForecastFragment firstFragment = new ForecastFragment();
-                getSupportFragmentManager().beginTransaction().add(
-                        R.id.container, firstfragment).commit();
-                )
-            }
-        }
-        Log.i(TAG), msg: "onCreate() is called");
 
-        ForecastFragment firstFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().add(
-                R.id.container, firstFragment).commit();
-        )
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_weather);
+        Log.i("create", "Create done");
     }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.i("start", "Start done");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i("resume", "Resume done");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("Pause", "Pause done");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("Stop", "Okayyyy");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("Destroy", "Oh nooooo!!!");
+    }
+}
