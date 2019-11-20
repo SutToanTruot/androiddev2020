@@ -2,17 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlue"
-    tools:context=".ForecastFragment">
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66FF99"
+        tools:context=".ForecastFragment">
+
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="@string/hello_blank_fragment"
-    />
+        android:textSize="40sp"/>
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="279dp"
+            android:layout_height="381dp"
+            android:src="@drawable/weather_icon_1" />
+
+
+    </FrameLayout>
 </LinearLayout>
