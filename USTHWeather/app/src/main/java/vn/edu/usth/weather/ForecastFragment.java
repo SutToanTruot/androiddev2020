@@ -11,11 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class ForecastFragment extends Fragment {
-    public ForecastFragment(){};
+    public ForecastFragment(){
+
+    }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_forecast, container, false);
+        View v = new View(getContext());
+        v.setBackgroundColor(0x66FFCC);
+        return v;
     }
 }
