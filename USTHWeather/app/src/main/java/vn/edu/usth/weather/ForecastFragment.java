@@ -7,8 +7,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class ForecastFragment extends Fragment {
     public ForecastFragment(){
@@ -18,6 +21,6 @@ public class ForecastFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saveInstanceState){
-        return inflater.inflate(R.layout.fragment_forecast,container,false);
+        return inflater.inflate(R.layout.fragment_forecast,container, false);
     }
 }
