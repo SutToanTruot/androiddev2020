@@ -12,15 +12,15 @@ import android.widget.RelativeLayout;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import java.util.Random;
 
 public class ForecastFragment extends Fragment {
     public ForecastFragment(){
 
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle saveInstanceState){
-        return inflater.inflate(R.layout.fragment_forecast,container, false);
+    private static final String days[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
+    private static int[] imageArray = {
+
     }
 }
