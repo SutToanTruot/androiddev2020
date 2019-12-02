@@ -22,5 +22,5 @@ public class ForecastFragment extends Fragment {
     private static final String days[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
     private static int[] imageArray = {
 
-    }
+    };
 }

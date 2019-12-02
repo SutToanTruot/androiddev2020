@@ -35,6 +35,6 @@ public class Adapter extends FragmentPagerAdapter {
         return titles[page];
     }
 
-    private class WeatherAndForecastFragment {
-    }/
-},
+    private class WeatherAndForecastFragment extends Fragment {
+    };
+}
