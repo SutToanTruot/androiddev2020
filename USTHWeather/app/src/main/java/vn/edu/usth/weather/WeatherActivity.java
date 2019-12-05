@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
+import android.content.Context;
+import android.media.MediaPlayer;
+import java.io.FileInputStream;
 import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
@@ -18,6 +21,9 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.WeatherForecastViewPager);
         adapter = new Adapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        MediaPlayer mediaPlayer;
+        mediaPlayer = MediaPlayer.create(WeatherActivity.this, R.raw.modernfuturebass);
+        mediaPlayer.start();
 
     }
     @Override

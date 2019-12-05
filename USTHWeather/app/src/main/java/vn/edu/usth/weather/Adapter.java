@@ -34,7 +34,4 @@ public class Adapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int page){
         return titles[page];
     }
-
-    private class WeatherAndForecastFragment extends Fragment {
-    };
 }

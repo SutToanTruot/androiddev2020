@@ -6,7 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".WeatherAndForecastFragment"
     android:orientation="vertical">
-
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".WeatherFragment">
+    </RelativeLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="146dp"
@@ -16,9 +20,10 @@
         android:layout_height="match_parent"
         android:id="@+id/forecastFragment">
     </FrameLayout>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
         android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
